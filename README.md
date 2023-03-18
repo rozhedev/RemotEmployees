@@ -60,6 +60,7 @@ confirm dialog, press "Y". This step need for allow executing local scripts in P
 **z_dist** - project bundle.
 
 In all files in #src folder, write path as like **from z_dist** folder.
+In **z_dist** images saved only in **.webp** format. For change it, delete filter function call in tasks/img.js
 
 HTML chunks (e.g. _news-card.html) & pages (e.g. about.html) files must be saved in different folders for prevent errors in z_dist
 

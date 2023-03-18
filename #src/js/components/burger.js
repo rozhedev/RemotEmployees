@@ -1,14 +1,12 @@
 "use strict";
 
-// const iconMenu = document.querySelector(".header__menu-icon");
-// const iconClose = document.querySelector(".header__hidden-icon");
-// const menuBody = document.querySelector(".header__hidden-menu");
+const iconMenu = document.querySelector(".menu__icon");
+const menuBody = document.querySelector(".menu__body");
 
-const lgContainer = 980;
-const smContainer = 720;
-
-// if (iconMenu && document.documentElement.clientWidth > lgContainer) {
-//     iconMenu.addEventListener("click", function (e) {
-//         menuBody.classList.add("_active");
-//     });
-// }
+if (iconMenu) {
+    iconMenu.addEventListener("click", function (e) {
+        document.body.classList.toggle("_lock");
+        iconMenu.classList.toggle("_active");
+        menuBody.classList.toggle("_active");
+    });
+}
