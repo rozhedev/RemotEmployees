@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
     overflow: hidden;
 
@@ -14,24 +14,24 @@
     }
 
     .logo {
-        width: 20%;
+        width: 25%;
 
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 1.5rem;
         background-color: $primary-accent-color;
-        font-weight: bold;
+        font-weight: 600;
         color: $dark-color;
 
         span {
             word-break: break-all;
         }
     }
-    .menu-link {
+    .navlink {
         margin: 0 2rem;
     }
-    li:not(:last-of-type) .menu-link::after {
+    li:not(:last-of-type) .navlink::after {
         content: '';
         display: block;
         position: absolute;
@@ -45,7 +45,7 @@
 
 .menu {
     &__body {
-        max-width: 100%;
+        max-width: 100vw;
         display: flex;
         // justify-content: flex-end;
         flex: 0 0 100%;
@@ -54,8 +54,6 @@
         /* * Container styles */
         display: flex;
         align-items: center;
-        max-width: map-get($map: $container-max-widths, $key: xxl);
-        margin: 0 auto;
         padding: 0 6rem 0 2rem;
     }
     &__list {
@@ -69,15 +67,6 @@
     &__icon {
         display: none;
     }
-}
-
-.menu-link {
-    display: inline-block;
-    color: $light-color;
-    font-weight: bold;
-}
-.menu-link:hover {
-    text-decoration: underline;
 }
 
 .profile {
@@ -119,7 +108,7 @@ body._touch .menu__link {
         left: 0;
         position: absolute;
         height: 10%;
-        width: 100%;
+        width: 100vw;
         transition: all 0.3s ease 0s;
         background-color: #fff;
     }
@@ -154,7 +143,7 @@ body._touch .menu__link {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 100px 30px 30px 30px;

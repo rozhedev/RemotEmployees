@@ -9,6 +9,8 @@
     @@include('chunks/_preloader.html',{})
 
     <div class="wrapper">
+        @@include('chunks/_aside.html',{})
+
         <main class="main page" id="main">
             <section class="promo section" id="promo">
                 <!-- * HEADER -->
@@ -16,22 +18,29 @@
 
                 <div class="container">
                     <div class="promo__content">
-                        <h1>The Walchen Lake</h1>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum dignissimos doloremque excepturi magnam sequi quae repudiandae assumenda, vero aliquid quibusdam optio reprehenderit temporibus in distinctio voluptates eos neque maxime placeat.
+                        <h1 class="h1">The Walchen <br> Lake</h1>
+                        <p class="descr">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing. <br> Excepturi magnam sequi quae repudiandae, <br> vero aliquid quibusdam optio reprehenderit.
+                        </p>
                         <button class="btn">Read More</button>
                     </div>
                 </div>
             </section>
             <section class="spots section">
                 <div class="container">
-
+                    <div class="spots-aside">
+                        <div class="spots-aside-item">
+                            <h2 class="h2">Featured Spots</h2>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, qui at inventore ab a sequi sed pariatur, perspiciatis tenetur repellendus ducimus aperiam ipsa.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
-
-        <!-- * FOOTER -->
-        @@include('chunks/_footer.html',{})
     </div>
+
+    <!-- * FOOTER -->
+    @@include('chunks/_footer.html',{})
 
     <!-- * POPUP -->
     <!-- @@include('chunks/_popup.html',{}) -->

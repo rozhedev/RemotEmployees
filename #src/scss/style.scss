@@ -17,13 +17,12 @@
 
 // * UI & DONE CLASSES>
 @import "base/ui.scss";
-// * All buttons styles in inputs.scss
-@import "base/inputs.scss";
 
 // * LIBS
 // @import 'libs/swiper.scss';
 
 // * COMPONENTS
+@import "components/aside.scss";
 @import "components/select.scss";
 @import "components/scroll.scss";
 

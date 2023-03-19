@@ -11,64 +11,98 @@
 }
 
 .h1 {
-    font-size: 40px;
-    
+    font-size: 3rem;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+
     @include bp(md) {
     }
 }
 
 .h2 {
-    font-size: 32px;
-    
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+
     @include bp(md) {
     }
 }
 
 .h3 {
-    
     @include bp(md) {
     }
 }
 
 .h4 {
-    
     @include bp(md) {
     }
 }
 
 .price {
-    
     @include bp(md) {
     }
 }
 
 .descr {
-    
+    font-size: 16px;
+    font-weight: 500;
     @include bp(md) {
     }
 }
 
 .navlink {
+    display: inline-block;
+    color: $light-color;
+    font-weight: 600;
     
     @include hover {
+        text-decoration: underline;
     }
     @include bp(md) {
     }
 }
 
 .label {
-    
+    @include bp(md) {
+    }
+}
+
+.inp {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.6s all;
+    &:focus {
+        outline: 0;
+        border-color: #655faf;
+    }
+
     @include bp(md) {
     }
 }
 
 .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    color: $text-color;
+    background-color: $primary-accent-color;
+    border: 2px solid $primary-accent-color;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.6s all;
     
     @include hover {
+        box-shadow: 0px 0 6px 1px $primary-accent-color;
     }
     &:active {
-    }
 
-    @include bp(md) {
     }
 }

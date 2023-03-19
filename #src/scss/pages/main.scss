@@ -1,21 +1,35 @@
-.promo {
-    min-height: 100vh;
-    width: 100%;
+.wrapper {
     background-image: 
     linear-gradient(to bottom, rgba(155, 138, 205, 0) 20%, rgba(0, 0, 0, 0.8)),
     url("../../img/photos/promo-bg.webp");
+    background-color: $dark-color;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: $light-color;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100%;
+    padding-left: 5rem;
+}
+
+.promo {
+    // min-height: 100%;
 
     &__content {
         padding-top: 10rem;
+
+        & > * {
+            margin-bottom: 1.5rem;
+        }
     }
-
-
     // * CORRECT USAGE
     // @include bp(sm) {
     //     background-color: yellowgreen;
     // }
+}
+
+.spots {
+    // height: 500px;
 }
