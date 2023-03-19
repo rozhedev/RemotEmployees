@@ -11,12 +11,10 @@
 .main {
     width: 100vw;
     min-height: 100%;
-    padding-left: 5rem;
+    padding: 0 3rem 0 5rem;
 }
 
 .promo {
-    // min-height: 100%;
-
     &__content {
         padding-top: 10rem;
 
@@ -31,5 +29,16 @@
 }
 
 .spots {
-    // height: 500px;
+}
+
+.spots-aside__list {
+    text-align: right;
+    .descr {
+        margin-top: 2rem;
+    }
+}
+
+.spots-slider {
+    height: 200px;
+    background-color: $dark-color;
 }
